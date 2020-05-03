@@ -1,0 +1,19 @@
+#random program to test the output
+a=2;
+b=a+2*3;
+print b;
+if a%2==0
+{
+	if a==2
+	{
+		print 0;
+	}
+	else
+	{
+		b=3;
+	}
+}
+else
+{
+	print 1;
+}

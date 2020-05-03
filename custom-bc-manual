@@ -1,0 +1,36 @@
+                                                                                CUSTOM BC LANGUAGE PROCESSOR
+                                                                                  -Taikhum Kothambawala	
+
+The processor supports the following features as required by batch-2, while following bc guidelines (ref 'man bc' for details) - 
+
+1. Support numbers both integers and fractional numbers                                    
+
+2. Support variables (checks for the constraints on variable names supported)                
+
+3. Allows only single line comments
+
+4. Support simple expressions and boolean operations (list can be found using man bc)      
+
+5. Support simple statements, compound statements (e.g. {a=2; b=3}), conditional statements (if, if else)
+
+The program is currently successfully compiled. 
+
+- Run "./custom-bc" in order to get the features
+
+In order to compile the entire program in case any errors exist, kindly run "make" in order to activate the commands stated in the make file.
+
+NOTE : In order to allow single line non variable dependent statements (i.e 2+1) kindly use the "=" sign (eg =2+1;)
+       Also, kindly use the ";" key at the end of each statement before pressing enter to feed the processor , else the program tends to be buggy.
+
+Example code :
+
+a=2;
+b=3;
+if a%2==0
+{
+	print 0;
+}
+else
+{
+	print 1;
+}
